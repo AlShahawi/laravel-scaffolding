@@ -31,7 +31,8 @@
         }
     },
     "scripts": {
-        "fix-cs-issues": "php-cs-fixer fix",
+        "php-cs:issues": "php-cs-fixer fix --diff --dry-run",
+        "php-cs:fix": "php-cs-fixer fix",
         "auto-complete:generate": [
             "php artisan ide-helper:meta",
             "php artisan ide-helper:generate",
