@@ -12,3 +12,4 @@ npm-debug.log
 *~
 .phpstorm.meta.php
 _ide_helper.php
+.php_cs.cache
