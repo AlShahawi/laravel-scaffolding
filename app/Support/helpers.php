@@ -1,5 +1,6 @@
 <?php
-if (! function_exists('sidebar_active')) {
+
+if ( ! function_exists('sidebar_active')) {
     /**
      * Generate html element class if route is equals to a given route.
      *
@@ -13,7 +14,6 @@ if (! function_exists('sidebar_active')) {
         if (empty($conditions)) {
             return Route::currentRouteName() == $route ? $className : '';
         } else {
-
             foreach ($conditions as $key => $value) {
                 if (request($key) == $value) {
                     return Route::currentRouteName() == $route ? $className : '';
@@ -23,7 +23,7 @@ if (! function_exists('sidebar_active')) {
     }
 }
 
-if (! function_exists('sidebar_resource_active')) {
+if ( ! function_exists('sidebar_resource_active')) {
     /**
      * Generate html element class if route is in a given resource.
      *
@@ -47,7 +47,7 @@ if (! function_exists('sidebar_resource_active')) {
     }
 }
 
-if (! function_exists('filter_html')) {
+if ( ! function_exists('filter_html')) {
     /**
      * Remove dangerous tags (with attributes) from html.
      *
@@ -57,7 +57,7 @@ if (! function_exists('filter_html')) {
      */
     function filter_html($html, $defaultAllowed = null)
     {
-        if (! $defaultAllowed) {
+        if ( ! $defaultAllowed) {
             $defaultAllowed = 'div,img[src],a[href|title],blockquote[cite],h1,h2,h3,h4,h5,b,i,tt,hr,strong,span,s,p,code,pre,em,ul,ol,li,table,thead,tbody,tr,td,th,br,*[style|class]';
         }
 
