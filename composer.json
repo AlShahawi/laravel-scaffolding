@@ -26,7 +26,7 @@
             "App\\": "app/"
         },
       "files": [
-        "app/Helpers/Support/helpers.php"
+        "app/Support/helpers.php"
       ]
     },
     "autoload-dev": {
