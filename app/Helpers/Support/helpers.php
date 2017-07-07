@@ -1,6 +1,5 @@
 <?php
 if (! function_exists('sidebar_active')) {
-
     /**
      * Generate html element class if route is equals to a given route.
      *
@@ -25,7 +24,6 @@ if (! function_exists('sidebar_active')) {
 }
 
 if (! function_exists('sidebar_resource_active')) {
-
     /**
      * Generate html element class if route is in a given resource.
      *
