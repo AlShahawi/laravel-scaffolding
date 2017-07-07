@@ -77,4 +77,3 @@ if (! function_exists('filter_html')) {
         return $purifier->purify($html);
     }
 }
-}
