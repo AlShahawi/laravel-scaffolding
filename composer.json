@@ -37,6 +37,7 @@
     "scripts": {
         "php-cs:issues": "php-cs-fixer fix --diff --dry-run",
         "php-cs:fix": "php-cs-fixer fix",
+        "app:clear": "php artisan clear-compiled && php artisan cache:clear && php artisan config:clear && php artisan debugbar:clear && php artisan route:clear && php artisan view:clear",
         "auto-complete:generate": [
             "php artisan ide-helper:meta",
             "php artisan ide-helper:generate",
