@@ -26,5 +26,5 @@ composer php-cs:fix # Used for fix any configured code style issues automaticall
 
 composer auto-complete:generate # Used for generating ide helper files.
 
-composer php-cs:fix # Used for clear application cache. Alias for php artisan clear-compiled && php artisan cache:clear && php artisan config:clear && php artisan debugbar:clear && php artisan route:clear && php artisan view:clear
+composer php-cs:fix # Used for clear application cache files.
 ```
