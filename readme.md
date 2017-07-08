@@ -20,7 +20,7 @@ The above command will install a new laravel 5.4 application for you.
 ## Composer Scripts
 We added composer scripts to avoid long and repeated commands. These scripts are:
 ```
-composer php-cs:issues # Used for checking for any configured code style.
+composer php-cs:issues # Used for checking for any configured code style issues.
 
 composer php-cs:fix # Used for fix any configured code style issues automatically.
 
