@@ -51,6 +51,9 @@ return PhpCsFixer\Config::create()
         // Docblocks should have the same indentation as the documented subject.
         'phpdoc_indent' => true,
 
+        // Annotations in phpdocs should be grouped together so that annotations of the same type immediately follow each other, and annotations of a different type are separated by a single blank line.
+        'phpdoc_separation' => true,
+
         // Annotations in phpdocs should be ordered so that param annotations come first, then throws annotations, then return annotations.
         'phpdoc_order' => true,
 
