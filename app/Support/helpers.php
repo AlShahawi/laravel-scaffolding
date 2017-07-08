@@ -1,52 +1,5 @@
 <?php
 
-if ( ! function_exists('sidebar_active')) {
-    /**
-     * Generate html element class if route is equals to a given route.
-     *
-     * @param $route
-     * @param string $className
-     * @param array $conditions
-     * @return string
-     */
-    function sidebar_active($route, $className = 'active', $conditions = [])
-    {
-        if (empty($conditions)) {
-            return Route::currentRouteName() == $route ? $className : '';
-        } else {
-            foreach ($conditions as $key => $value) {
-                if (request($key) == $value) {
-                    return Route::currentRouteName() == $route ? $className : '';
-                }
-            }
-        }
-    }
-}
-
-if ( ! function_exists('sidebar_resource_active')) {
-    /**
-     * Generate html element class if route is in a given resource.
-     *
-     * @param  string $resource
-     * @param  array $routes
-     * @param  string $className
-     *
-     * @return string
-     */
-    function sidebar_resource_active($resource, $routes = [], $className = 'active')
-    {
-        $routes = array_merge($routes, ['index', 'store', 'create', 'show', 'destroy', 'update', 'edit']);
-
-        foreach ($routes as $route) {
-            if (Route::currentRouteName() == ($resource.'.'.$route)) {
-                return $className;
-            }
-        }
-
-        return '';
-    }
-}
-
 if ( ! function_exists('filter_html')) {
     /**
      * Remove dangerous tags (with attributes) from html.
