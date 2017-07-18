@@ -18,23 +18,32 @@ $finder = PhpCsFixer\Finder::create()
 return PhpCsFixer\Config::create()
     ->setRules([
         '@PSR2' => true,
+
+        /*
+         * Arrays
+         */
+
         // PHP arrays should be declared using the short syntax [] not array().
         'array_syntax' => ['syntax' => 'short'],
 
         // In array declaration, there MUST be a whitespace after each comma.
         'whitespace_after_comma_in_array' => true,
 
+        // PHP multi-line arrays should have a trailing comma.
+        'trailing_comma_in_multiline_array' => true,
+
+        /*
+         * Whitespaces
+         */
+
         // Ensure there is no code on the same line as the PHP open tag and it is followed by a blank line.
         'blank_line_after_opening_tag' => true,
 
-        // An empty line feed should precede a return statement.
-        'blank_line_before_return' => true,
-
-        // Single line comments should use double slashes // and not hash #.
-        'hash_to_slash_comment' => true,
-
         // Methods must be separated with one blank line.
         'method_separation' => true,
+
+        // An empty line feed should precede a return statement.
+        'blank_line_before_return' => true,
 
         // Remove trailing whitespace at the end of blank lines.
         'no_whitespace_in_blank_line' => true,
@@ -45,8 +54,18 @@ return PhpCsFixer\Config::create()
         // There should not be space before or after object T_OBJECT_OPERATOR ->.
         'object_operator_without_whitespace' => true,
 
-        // The import statements should be sorted by length.
-        'ordered_imports' => ['sortAlgorithm' => 'length'],
+        // A single space should be between cast and variable.
+        'cast_spaces' => true,
+
+        // There should be exactly one blank line before a namespace declaration.
+        'single_blank_line_before_namespace' => true,
+
+        // Standardize spaces around ternary operator.
+        'ternary_operator_spaces' => true,
+
+        /*
+         * PHPDocs
+         */
 
         // Docblocks should have the same indentation as the documented subject.
         'phpdoc_indent' => true,
@@ -63,21 +82,6 @@ return PhpCsFixer\Config::create()
         // Docblocks should only be used on structural elements.
         'phpdoc_to_comment' => true,
 
-        // Cast (boolean) and (integer) should be written as (bool) and (int), (double) and (real) as (float).
-        'short_scalar_cast' => true,
-
-        // A single space should be between cast and variable.
-        'cast_spaces' => true,
-
-        // There should be exactly one blank line before a namespace declaration.
-        'single_blank_line_before_namespace' => true,
-
-        // Standardize spaces around ternary operator.
-        'ternary_operator_spaces' => true,
-
-        // PHP multi-line arrays should have a trailing comma.
-        'trailing_comma_in_multiline_array' => true,
-
         // @package and @subpackage annotations should be omitted from phpdocs.
         'phpdoc_no_package' => true,
 
@@ -86,6 +90,19 @@ return PhpCsFixer\Config::create()
 
         // Scalar types should always be written in the same form. int not integer, bool not boolean, float not real or double.
         'phpdoc_scalar' => true,
+
+        /*
+         * Other
+         */
+
+        // Single line comments should use double slashes // and not hash #.
+        'hash_to_slash_comment' => true,
+
+        // Cast (boolean) and (integer) should be written as (bool) and (int), (double) and (real) as (float).
+        'short_scalar_cast' => true,
+
+        // The import statements should be sorted by length.
+        'ordered_imports' => ['sortAlgorithm' => 'length'],
     ])
     ->setFinder($finder)
 ;
