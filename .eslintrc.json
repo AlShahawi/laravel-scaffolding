@@ -1,11 +1,16 @@
 {
     "extends": "airbnb-base",
+    "plugins": [ "html" ],
+    "settings": {
+        "html/html-extensions": [".vue"]
+    },
     "rules": {
         "global-require": "off",
         "import/no-extraneous-dependencies": "off",
         "no-console": "off",
         "no-empty": "off",
         "no-new": "off",
+        "no-cond-assign": "off",
         "no-unused-vars": "warn"
     },
     "env": {
