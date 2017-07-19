@@ -1,9 +1,5 @@
 {
     "extends": "airbnb-base",
-    "plugins": [ "html" ],
-    "settings": {
-        "html/html-extensions": [".html", ".vue", ".blade.php"]
-    },
     "rules": {
         "global-require": "off",
         "import/no-extraneous-dependencies": "off",
