@@ -5,7 +5,8 @@
         "import/no-extraneous-dependencies": "off",
         "no-console": "off",
         "no-empty": "off",
-        "no-new": "off"
+        "no-new": "off",
+        "no-unused-vars": "warn"
     },
     "env": {
         "browser": true,
