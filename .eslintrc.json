@@ -2,7 +2,7 @@
     "extends": "airbnb-base",
     "plugins": [ "html" ],
     "settings": {
-        "html/html-extensions": [".vue"]
+        "html/html-extensions": [".vue", ".php"]
     },
     "rules": {
         "global-require": "off",
