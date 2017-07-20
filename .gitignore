@@ -6,6 +6,8 @@
 /vendor
 /.idea
 /.vagrant
+/docs/api/build
+/docs/api/_cache
 Homestead.json
 Homestead.yaml
 npm-debug.log

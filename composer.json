@@ -44,6 +44,7 @@
             "php artisan ide-helper:generate",
             "php artisan ide-helper:models --nowrite"
         ],
+        "api:generate": "php sami.phar update docs/api/config.php",
         "post-root-package-install": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
