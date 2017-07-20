@@ -9,11 +9,12 @@
         "barryvdh/laravel-debugbar": "^2.4",
         "barryvdh/laravel-ide-helper": "^2.4",
         "doctrine/dbal": "^2.5",
+        "ezyang/htmlpurifier": "^4.9",
         "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0",
-        "ezyang/htmlpurifier": "^4.9"
+        "laravel/tinker": "~1.0"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.4",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7"
@@ -35,8 +36,8 @@
         }
     },
     "scripts": {
-        "php-cs:issues": "php-cs-fixer fix --diff --dry-run",
-        "php-cs:fix": "php-cs-fixer fix",
+        "php-cs:issues": "vendor/bin/php-cs-fixer fix --diff --dry-run",
+        "php-cs:fix": "vendor/bin/php-cs-fixer fix",
         "app:clear": "php artisan clear-compiled && php artisan cache:clear && php artisan config:clear && php artisan debugbar:clear && php artisan route:clear && php artisan view:clear",
         "auto-complete:generate": [
             "php artisan ide-helper:meta",
