@@ -8,9 +8,9 @@
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "js-cs:issues": "node_modules/.bin/eslint --ext .js,.html,.vue resources/assets/js",
-    "js-cs:issues-hard": "node_modules/.bin/eslint --ext .js,.html,.vue --no-inline-config resources/assets/js",
-    "js-cs:fix": "node_modules/.bin/eslint --fix --ext .js,.html,.vue resources/assets/js"
+    "js-cs:issues": "node_modules/.bin/eslint --ext .js,.html,.php,.vue resources/assets/js resources/views --ignore-pattern 'resources/*/vendor/*'",
+    "js-cs:issues-hard": "node_modules/.bin/eslint --ext .js,.html,.php,.vue --no-inline-config resources/assets/js resources/views --ignore-pattern 'resources/*/vendor/*'",
+    "js-cs:fix": "node_modules/.bin/eslint --fix --ext .js,.html,.php,.vue resources/assets/js resources/views --ignore-pattern 'resources/*/vendor/*'"
   },
   "devDependencies": {
     "axios": "^0.15.3",
