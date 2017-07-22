@@ -6,7 +6,6 @@ Mirrored from [https://github.com/laravel/laravel.git](https://github.com/larave
 ## Requirements
 The requirements is the same as of the [official requirements](https://laravel.com/docs/5.4/installation#server-requirements) plus the following requirements needs to be in the developer's machine.
 
-* [PHP Coding Standards Fixer](http://cs.sensiolabs.org/#globally-composer) >= 2.3.2
 * NPM >= 5.0.0
 * Node >= 7.0.0
 
