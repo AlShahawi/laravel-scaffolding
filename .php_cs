@@ -48,8 +48,8 @@ return PhpCsFixer\Config::create()
         // Remove trailing whitespace at the end of blank lines.
         'no_whitespace_in_blank_line' => true,
 
-        // Logical NOT operators (!) should have leading and trailing whitespaces.
-        'not_operator_with_space' => true,
+        // Logical NOT operators (!) should have one trailing whitespace.
+        'not_operator_with_successor_space' => true,
 
         // There should not be space before or after object T_OBJECT_OPERATOR ->.
         'object_operator_without_whitespace' => true,
