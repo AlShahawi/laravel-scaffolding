@@ -1,8 +1,8 @@
 <?php
 
 use Sami\Sami;
-use Sami\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
+use Sami\Version\GitVersionCollection;
 
 $iterator = Finder::create()
     ->files()
