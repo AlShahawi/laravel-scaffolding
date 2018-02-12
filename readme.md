@@ -4,7 +4,7 @@ A non-official laravel application scaffolding that includes `debugbar`, `ide-he
 Mirrored from [https://github.com/laravel/laravel.git](https://github.com/laravel/laravel.git).
 
 ## Requirements
-The requirements is the same as of the [official requirements](https://laravel.com/docs/5.5/installation#server-requirements) plus the following requirements needs to be in the developer's machine.
+The requirements is the same as of the [official requirements](https://laravel.com/docs/5.6/installation#server-requirements) plus the following requirements needs to be in the developer's machine.
 
 * NPM >= 5.0.0
 * Node >= 7.0.0
@@ -14,7 +14,7 @@ You can also install Laravel via Composer by issuing the `create-project` comman
 ```
 composer create-project --prefer-dist alshahawi/laravel:dev-scaffolding/5.6 blog
 ```
-The above command will install a new laravel 5.5 application for you.
+The above command will install a new laravel 5.6 application for you.
 
 ## Composer Scripts
 We added composer scripts to avoid long and repeated commands. These scripts are:
@@ -25,5 +25,5 @@ composer php-cs:fix # Used for fix any configured code style issues automaticall
 
 composer auto-complete:generate # Used for generating ide helper files.
 
-composer php-cs:fix # Used for clear application cache files.
+composer app:clear # Used for clear application cache files.
 ```
