@@ -12,7 +12,7 @@ The requirements is the same as of the [official requirements](https://laravel.c
 ## Installation
 You can also install Laravel via Composer by issuing the `create-project` command in your terminal:
 ```
-composer create-project --prefer-dist alshahawi/laravel:dev-scaffolding/5.5 blog
+composer create-project --prefer-dist alshahawi/laravel:dev-scaffolding/5.6 blog
 ```
 The above command will install a new laravel 5.5 application for you.
 

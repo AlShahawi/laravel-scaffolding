@@ -5,6 +5,7 @@
 /storage/debugbar
 /vendor
 /.idea
+/.vscode
 /.vagrant
 /docs/api/build
 /docs/api/_cache
