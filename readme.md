@@ -12,7 +12,7 @@ The requirements is the same as of the [official requirements](https://laravel.c
 ## Installation
 You can also install Laravel via Composer by issuing the `create-project` command in your terminal:
 ```
-composer create-project --prefer-dist alshahawi/laravel:dev-scaffolding/5.6 blog
+composer create-project --prefer-dist alshahawi/laravel:dev-scaffolding/5.7 blog
 ```
 The above command will install a new laravel 5.6 application for you.
 
@@ -27,3 +27,7 @@ composer auto-complete:generate # Used for generating ide helper files.
 
 composer app:clear # Used for clear application cache files.
 ```
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

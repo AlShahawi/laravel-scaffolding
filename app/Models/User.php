@@ -7,6 +7,7 @@ use App\Models\Helpers\UserHelpers;
 use App\Models\Mutators\UserMutators;
 use App\Models\Relations\UserRelations;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
