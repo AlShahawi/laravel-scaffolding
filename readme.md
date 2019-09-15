@@ -4,14 +4,14 @@ A non-official laravel application scaffolding that includes `debugbar`, `ide-he
 Mirrored from [https://github.com/laravel/laravel.git](https://github.com/laravel/laravel.git).
 
 ## Requirements
-The requirements is the same as of the [official requirements](https://laravel.com/docs/5.8/installation#server-requirements).
+The requirements is the same as of the [official requirements](https://laravel.com/docs/6.0/installation#server-requirements).
 
 ## Installation
 You can also install Laravel via Composer by issuing the `create-project` command in your terminal:
 ```
-composer create-project --prefer-dist alshahawi/laravel:dev-scaffolding/5.8 blog
+composer create-project --prefer-dist alshahawi/laravel:dev-scaffolding/6.0 blog
 ```
-The above command will install a new laravel 5.8 application for you.
+The above command will install a new laravel 6 application for you.
 
 ## Composer Scripts
 We added composer scripts to avoid long and repeated commands. These scripts are:
