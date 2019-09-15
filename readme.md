@@ -1,6 +1,6 @@
 Laravel Scaffolding
 =====================
-A non-official laravel application scaffolding that includes `debugbar`, `ide-helper`, `.php_cs` and `Eslint` configurations.
+A non-official laravel application scaffolding that includes `debugbar`, `ide-helper` and `.php_cs` configurations.
 Mirrored from [https://github.com/laravel/laravel.git](https://github.com/laravel/laravel.git).
 
 ## Requirements
