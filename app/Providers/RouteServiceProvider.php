@@ -39,7 +39,25 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapDashboardRoutes();
+
         //
+    }
+
+    /**
+     * Define the "dashboard" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapDashboardRoutes()
+    {
+        Route::middleware('dashboard')
+            ->prefix('dashboard')
+            ->as('dashboard.')
+            ->namespace($this->namespace.'\Dashboard')
+            ->group(base_path('routes/dashboard.php'));
     }
 
     /**

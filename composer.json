@@ -9,19 +9,22 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "elnooronline/laravel-adminlte": "^2.0",
+        "elnooronline/laravel-bootstrap-forms": "^2.2",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "^6.0",
         "friendsofphp/php-cs-fixer": "^2.14",
+        "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
+        "barryvdh/laravel-ide-helper": "^2.6",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
+        "laravel/ui": "^1.0",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
-        "phpunit/phpunit": "^8.0",
-        "barryvdh/laravel-ide-helper": "^2.6",
-        "barryvdh/laravel-debugbar": "^3.2"
+        "phpunit/phpunit": "^8.0"
     },
     "config": {
         "optimize-autoloader": true,

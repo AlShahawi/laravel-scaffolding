@@ -27,6 +27,12 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middlewareGroups = [
+        'dashboard' => [
+            'web',
+            'auth',
+            //
+        ],
+
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
